@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio del Desarrollador</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+        }
+
+        body {
+            background: linear-gradient(45deg, #ffcc00, #ff3300, #33ccff, #33cc33);
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite;
+            color: white;
+            text-align: center;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            padding: 50px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px #000;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .section {
+            margin: 50px 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .section p {
+            font-size: 1.2em;
+            line-height: 1.5em;
+        }
+
+        .fadeIn {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        .slideInLeft {
+            transform: translateX(-100%);
+            animation: slideInLeft 1s forwards;
+        }
+
+        @keyframes slideInLeft {
+            to { transform: translateX(0); }
+        }
+
+        .slideInRight {
+            transform: translateX(100%);
+            animation: slideInRight 1s forwards;
+        }
+
+        @keyframes slideInRight {
+            to { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Bienvenido a mi Portafolio
+    </header>
+    <div class="content">
+        <div class="section fadeIn">
+            <h2>Sobre Mí</h2>
+            <p>Soy un desarrollador apasionado por la tecnología y el diseño. Me encanta crear aplicaciones web interactivas y funcionales.</p>
+        </div>
+        <div class="section slideInLeft">
+            <h2>Proyectos</h2>
+            <p>He trabajado en varios proyectos interesantes, desde aplicaciones móviles hasta sitios web complejos.</p>
+        </div>
+        <div class="section slideInRight">
+            <h2>Portafolio</h2>
+            <p>Aqui va el portafolio</p>
+        </div>
+    </div>
+</body>
+</html>
